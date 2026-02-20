@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El saborcito Hidalguense </title>
+    <meta name="description"
+        content="Taquería El saborcito Hidalguense - Auténticos antojitos mexicanos y tacos con la mejor calidad y servicio.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">El saborcito <span class="highlight">Hidalguense</span></a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="hero-title">Tradición y Sabor <br> <span class="text-gold">Mexicano</span></h1>
+            <p class="hero-text">La excelencia en tacos y antojitos hidalguenses.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Ver Menú</a>
+                <a href="#contact" class="btn btn-outline">Pedidos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text fade-in-left">
+                    <p><strong>El saborcito Hidalguense</strong> fue creada por una familia con origen en el Estado de
+                        Hidalgo,
+                        por eso el nombre.</p>
+                    <p>Hemos perfeccionado nuestros productos utilizando los mejores ingredientes para la preparación de
+                        alimentos, siempre pensando en seguir mejorando para satisfacer el paladar de nuestros clientes.
+                    </p>
+
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Pasión</h3>
+                            <p>El cliente es nuestra razón de ser.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-award"></i>
+                            <h3>Calidad</h3>
+                            <p>Higiene y los mejores ingredientes.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Familia</h3>
+                            <p>Un ambiente digno y confiable.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Placeholder for an image since we don't have the original assets -->
+                <div class="about-image-container fade-in-right">
+                    <div class="image-placeholder">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <p class="section-subtitle">Descubre nuestros sabores</p>
+                <h2 class="section-title">Nuestro Menú</h2>
+                <div class="separator"></div>
+            </div>
+
+            <div class="menu-filters fade-in">
+                <button class="filter-btn active" data-filter="favoritos">Favoritos</button>
+                <button class="filter-btn" data-filter="tacos">Tacos</button>
+                <button class="filter-btn" data-filter="quesadillas">Quesadillas</button>
+                <button class="filter-btn" data-filter="ordenes">Ordenes</button>
+                <button class="filter-btn" data-filter="especiales">Especiales</button>
+            </div>
+
+            <div class="menu-grid" id="menu-container">
+                <!-- Menu items will be injected via JS -->
+            </div>
+
+            <div class="menu-note fade-in">
+                <p>* Precios sujetos a cambio. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Taquizas -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Servicios</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="services-content fade-in-up">
+                <div class="service-card">
+                    <i class="fas fa-bag-shopping"></i>
+                    <h3>Pide y Recoge</h3>
+                    <p>Haz tu pedido con anticipación y pasa a recogerlo sin filas. Disfruta de la mejor calidad en
+                        casa.</p>
+                    <a href="#menu" class="btn btn-text">Ordenar Ahora <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="map-card">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5074218698187!2d-99.61067512403666!3d19.30658538183177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bd4c13a378d%3A0x7d01a91e1d7a3120!2sHidalguense%20Toluca!5e0!3m2!1sen!2smx!4v1708449091934!5m2!1sen!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-info">
+                        <h3>Nuestra Ubicación</h3>
+                        <p>Visítanos y disfruta del auténtico sabor hidalguense.</p>
+                        <a href="https://www.google.com.mx/maps/place/Hidalguense/@19.3065854,-99.6106751,17z/data=!3m1!4b1!4m6!3m5!1s0x85cd8a73b7631c05:0x3fb4194762ec18fe!8m2!3d19.3065854!4d-99.6081002!16s%2Fg%2F11cs3bf2fs?entry=ttu"
+                            target="_blank" class="btn btn-text">Ver en Google Maps <i
+                                class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>El saborcito Hidalguense</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> <a href="tel:5523439353">55-2343-****</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:5557809467">55-5780-****</a></p>
+                    </div>
+                </div>
+                <div class="footer-hours">
+                    <h4>Horario</h4>
+                    <p>Lunes - Domingo</p>
+                    <p>13:00 - 23:00</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Taquería El saborcito Hidalguense. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <div class="cart-btn" id="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Pedido</h3>
+            <button class="close-cart" id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by JS -->
+            <div class="empty-cart-msg">Tu carrito está vacío</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block checkout-btn" id="checkout-btn">
+                <i class="fab fa-whatsapp"></i> Hacer Pedido
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Agregado al carrito</div>
+
+    <!-- Options Modal -->
+    <div class="modal-overlay" id="options-modal">
+        <div class="modal-content">
+            <h3 id="modal-title">Elige una opción</h3>
+            <div class="modal-options" id="modal-options-container">
+                <!-- Options injected by JS -->
+            </div>
+            <button class="btn-cancel" onclick="closeOptionsModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
